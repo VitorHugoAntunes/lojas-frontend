@@ -8,6 +8,7 @@
 .profile-container header {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .profile-container header span {
@@ -29,14 +30,59 @@
     height: 60px;
     width: 60px;
     border-radius: 4px;
+    background-color: #fff;
     border: 1px solid #dcdce6;
-    background: transparent;
-    margin-left: 16px;
     transition: border-color 0.2s;
+    position: absolute;
+    right: 0px;
 }
 
 .profile-container header button:hover {
     border-color: #999;
+}
+
+.divHeader {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.divHeader h1 {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.divHeader span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #fff;
+    display: flex;
+    position: relative;
+    top: 28px;
+}
+
+.divHeader a {
+    text-decoration: none;
+}
+
+.divHeader1 {
+    width: 50%;
+    display: flex;
+}
+
+.divHeader2 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.profile-container .spanEstoque {
+    opacity: 60%;
+}
+
+.hr {
+    border: 1px solid #fff;
 }
 
 .profile-container h1 {
@@ -56,23 +102,31 @@
     padding: 24px;
     border-radius: 8px;
     position: relative;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
 }
 
-.profile-container ul li button {
+.profile-container ul li span {
     position: absolute;
     right: 24px;
     top: 24px;
     border: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.profile-container ul li button:hover {
-    opacity: 0.8;
-}
 
 .profile-container ul li strong {
-    display: block;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
     color: #41414d;
+    font-size: 24px;
+}
+
+.profile-container ul li a {
+    position: absolute;
+    margin-top: 5px;
+    left: 125px;
 }
 
 .profile-container ul li p + strong {
@@ -82,6 +136,15 @@
 .profile-container ul li p {
     color: #737380;
     line-height: 21px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
+.pedidos .linkPedido {
+    color: #41414d;
+}
+
+.profile-container .div1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}

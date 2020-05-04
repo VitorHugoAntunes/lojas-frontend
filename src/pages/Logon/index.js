@@ -6,8 +6,8 @@ import api from '../../services/api'
 
 import './styles.css'
 
-import logoImg from '../../assets/logo.svg'
-import heroesImg from '../../assets/heroes.png'
+import logoImg from '../../assets/americanas-logo.png'
+import heroesImg from '../../assets/screen.png'
 
 export default function Logon() {
     const [id, setId] = useState('')
@@ -15,44 +15,43 @@ export default function Logon() {
 
     async function handleLogin(e) {
         e.preventDefault()
-
-        try {
-            const response = await api.post('sessions', { id })
-
-            localStorage.setItem('ongId', id)
-            localStorage.setItem('ongName', response.data.name)
-
-            history.push('/profile')
-        }
-
-        catch (err) {
-            alert('Falha no login, tente novamente.')
-        }
+        history.push('/profile')
     }
 
     return (
         <div className="logon-container">
+            <img className="img1" src={logoImg} alt="Be The Hero"/>
+            <div className="container-logo">
             <section className="form">
-                <img src={logoImg} alt="Be The Hero"/>
 
                 <form onSubmit={handleLogin}>
-                    <h1>Faça seu logon</h1>
+                    <h1>Para ver os pedidos dos seus clientes ou
+                        verificar seu estoque, <u>logue em sua conta</u>.</h1>
 
-                    <input
-                        placeholder="Sua ID"
+                    <input 
+                        type="email"
+                        className="form-input"
+                        placeholder="Seu e-mail"
+                    />
+                    <input 
+                        type="password"
+                        placeholder="Sua senha"
                         value={id}
                         onChange={ e => setId(e.target.value)}
                     />
-                    <button className="button" type="submit">Entrar</button>
+                    <div className="input-group1">
+                        <Link className="back-link1" to="/register">
+                            <FiLogIn size={16} color="#fff" />
+                            Não tenho cadastro 
+                        </Link>
 
-                    <Link className="back-link" to="/register">
-                        <FiLogIn size={16} color="#e02041" />
-                        Não tenho cadastro 
-                    </Link>
+                        <button className="button1" type="submit">Entrar</button>
+                    </div>
                 </form>
             </section>
 
             <img src={heroesImg} alt="Heroes"/>
+            </div>
         </div>
         
     )

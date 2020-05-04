@@ -1,0 +1,146 @@
+.profile-container2 {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.profile-container2 header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-container2 header span {
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.profile-container2 header img {
+    height: 64px;
+}
+
+.profile-container2 header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.profile-container2 header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #dcdce6;
+    transition: border-color 0.2s;
+    position: absolute;
+    right: 0px;
+}
+
+.profile-container2 header button:hover {
+    border-color: #999;
+}
+
+.profile-container2 .spanPedido {
+    opacity: 60%;
+}
+
+.profile-container2 h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+
+.divUl {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.profile-container2 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    list-style: none;
+    width: 100%;
+}
+
+.profile-container2 .strongUl {
+    font-size: 20px;
+    left: 17%;
+    top: 170px;
+}
+
+.profile-container2 ul img {
+    margin-bottom: 15px;
+}
+
+.profile-container2 ul li {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.profile-container2 ul li span {
+    right: 24px;
+    top: 24px;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.profile-container2 ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+    font-size: 28px;
+}
+
+.profile-container2 ul li p + strong {
+    margin-top: 32px;
+}
+
+.profile-container2 ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.profile-container2 ul li u {
+    position: absolute;
+    left: 33%;
+    bottom: 5px;
+}
+
+.divHeader {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.divHeader h1 {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.divHeader1 a {
+    margin-top: 49px;
+}
+
+.pedidoEstoque {
+    position: absolute;
+    right:0;
+}
+
+.hr {
+    border: 1px solid #fff;
+}
+
+
+
+

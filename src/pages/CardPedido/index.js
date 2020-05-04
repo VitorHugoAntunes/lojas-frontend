@@ -4,7 +4,7 @@ import { FiUser, FiX } from 'react-icons/fi'
 
 import api from '../../services/api'
 
-import './css/styles.css'
+import './styles.css'
 
 import logoImg from '../../assets/americanas-logo.png'
 import iconPhoto from '../../assets/insert_photo-6.png'
@@ -67,7 +67,7 @@ export default function CardPedido() {
     }
 
     return (
-        <div className="profile-container">
+        <div className="profile-container3">
             <header>
                 <img src={logoImg} alt="Be The Hero"/>
 
@@ -198,7 +198,96 @@ export default function CardPedido() {
                     
             </ul>
 
-                          
+                <section className="box-delivery">
+                    <div className="pedidoCard">
+                        <strong className="strong1">Pedido 1</strong>
+
+                        <strong className="strongName">Cliente: Fulano da Silva</strong>
+                        <h1 className="h1">Lista de produtos que o cliente comprou:</h1>
+
+                        <div className="strong3">
+                            <strong className="str3">Total de produtos: 5</strong>
+                            <strong className="str4">Preço total: R$ 100,00</strong>
+                        </div>
+                        
+                            <div className="products-list">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img className="productImg"src={iconPhoto} alt="Heroes"/>
+                                        </div>
+                                        <div className="contentList">
+                                            <strong>Biscoito Trakinas</strong>
+                                            <p>Unidades: 2</p>
+                                            <p>Preço: R$ 3,99</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img className="productImg"src={iconPhoto} alt="Heroes"/>
+                                        </div>
+                                        <div className="contentList">
+                                            <strong>Biscoito Trakinas</strong>
+                                            <p>Unidades: 2</p>
+                                            <p>Preço: R$ 3,99</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img className="productImg"src={iconPhoto} alt="Heroes"/>
+                                        </div>
+                                        <div className="contentList">
+                                            <strong>Biscoito Trakinas</strong>
+                                            <p>Unidades: 2</p>
+                                            <p>Preço: R$ 3,99</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img className="productImg"src={iconPhoto} alt="Heroes"/>
+                                        </div>
+                                        <div className="contentList">
+                                            <strong>Biscoito Trakinas</strong>
+                                            <p>Unidades: 2</p>
+                                            <p>Preço: R$ 3,99</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img className="productImg"src={iconPhoto} alt="Heroes"/>
+                                        </div>
+                                        <div className="contentList">
+                                            <strong>Biscoito Trakinas</strong>
+                                            <p>Unidades: 2</p>
+                                            <p>Preço: R$ 3,99</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img className="productImg"src={iconPhoto} alt="Heroes"/>
+                                        </div>
+                                        <div className="contentList">
+                                            <strong>Biscoito Trakinas</strong>
+                                            <p>Unidades: 2</p>
+                                            <p>Preço: R$ 3,99</p>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                        <strong><u className="strongFooter">Finalizar pedido</u></strong>
+
+
+                        <span>14:21</span>
+                        <a href="/" onClick={handleProfile}><FiX
+                            className="iconX"
+                            size={40}  
+                            color="#000" 
+                        />
+                        </a>
+                    </div>
+                </section>            
             <section className="cover"></section>
         </div>
     )

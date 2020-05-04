@@ -1,0 +1,319 @@
+
+.profile-container3 {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.profile-container3 header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-container3 header span {
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.profile-container3 header img {
+    height: 64px;
+}
+
+.profile-container3 header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.profile-container3 header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #dcdce6;
+    transition: border-color 0.2s;
+    position: absolute;
+    right: 0px;
+}
+
+.profile-container3 header button:hover {
+    border-color: #999;
+}
+
+.divHeader {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.divHeader h1 {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.divHeader span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #fff;
+    display: flex;
+    position: relative;
+    top: 28px;
+}
+
+.divHeader a {
+    text-decoration: none;
+}
+
+.divHeader1 {
+    width: 50%;
+    display: flex;
+}
+
+.divHeader2 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.profile-container3 .spanEstoque {
+    opacity: 60%;
+}
+
+.hr {
+    border: 1px solid #fff;
+}
+
+.profile-container3 h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+
+.profile-container3 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.profile-container3 ul li {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.profile-container3 ul li span {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-container3 ul li strong {
+    margin-bottom: 25px;
+    color: #41414d;
+    font-size: 24px;
+}
+
+.profile-container3 ul li a {
+    position: absolute;
+    margin-top: 5px;
+    left: 125px;
+}
+
+.profile-container3 ul li p + strong {
+    margin-top: 32px;
+}
+
+.profile-container3 ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 20px;
+}
+
+.pedidos .linkPedido {
+    color: #41414d;
+}
+
+.profile-container3 .div1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.pedidoCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pedidoCard .strong3{
+    display: flex;
+}
+
+.pedidoCard .strong3 .str3{
+    font-size: 24px;
+    flex-basis: 50%;
+    width: 100%;
+}
+
+.pedidoCard .strong3 .str4{
+    font-size: 24px;
+    flex-basis: 50%;
+    width: 100%;
+}
+
+.pedidoCard span {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+}
+
+.box-delivery{
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.box-delivery strong {
+    font-size: 36px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-delivery .strongName {
+    font-size: 28px;
+}
+
+
+.box-delivery .strong1 {
+    margin-bottom: 10px;
+}
+
+.box-delivery .strong2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.box-delivery .strong2 strong {
+    font-size: 24px;
+}
+
+
+.box-delivery .strong2 .str1 {
+    width: 50%;
+    display: flex;
+}
+.box-delivery .strong2 .str2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-delivery .strongFooter{
+    position: absolute;
+    display: inline-block;
+    top:520px;
+}
+
+.pedidoCard .h1 {
+    margin-top: 15px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.box-delivery .iconX {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+}
+
+.box-delivery span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.products-list{
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    max-height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 770px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.pedidoCard .products-list ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    background-color: rgba(170, 167, 167, 0.411);
+    border-radius: 10px;
+    padding: 10px;
+    flex-basis: calc(50% - 10px);
+    width: 100%;
+    min-width: 300px;
+}
+
+.pedidoCard .products-list ul li p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.pedidoCard .products-list strong {
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.pedidoCard .products-list img {
+    top: 13%;
+    left: 5%;
+    position: absolute;
+    align-content: center;
+}
+
+.pedidoCard .products-list .contentList {
+    margin-left:100px;
+    align-content: center;
+}
+
+
+
